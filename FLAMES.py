@@ -10,6 +10,7 @@ a=input("Enter FIRST name : ")
 b=input("Enter SECOND name : ")
 a=a.upper()
 b=b.upper()
+t=rem_match_char(a,b)
 res=['FRIENDSHIP','LOVE','AFFECTION','MARRIAGE','ENEMY','SIBLING']
 while len(res)>1:
     cut=t%len(res)
@@ -21,7 +22,6 @@ while len(res)>1:
         res=res[:len(res)-1]
     else:
         res=res[cut:]+res[:cut-1]
-
-print(res)
+print("RELATIONSHIP : ",res[0])
 
 
